@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+  		<title>
+			<!-- Название -->
+		</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+<body>
+	<div class="finance-block-layer invisible">
+		<div class="finance-block-layer_header">
+			Внести данные
+		</div>
+
+		<form class="finance-block-layer_form room-create-form" onsubmit="return false;">
+			<div class="finance-create-form_error js-error-layer invisible">
+				Ошибка, проверьте правильность введенных данных!
+			</div>
+
+			<label class="finance-create-form_label">
+				<select class="finance-create-form_select js-categories-list">
+				</select>
+			</label>
+
+			<div class="finance-create-form_error js-error-categories invisible">
+				Ошибка, вы не можете добавлять категории!
+			</div>
+
+			<label class="finance-create-form_label">
+				<input type="button" class="finance-create-form_input js-add-category" value="+">
+			</label>
+
+			<div class="finance-create-form-categories invisible js-new-category-form">
+				<input type="text" class="js-new-category-name" placeholder="Название категории">
+				<button type="button" class="js-new-category-btn">Создать</button>
+			</div>
+
+			<label class="finance-create-form_label">
+				<input type="text" required class="finance-create-form_input js-amount" placeholder="Введите сумму">
+			</label>
+
+			<label class="finance-create-form_label">
+				<input type="text" required class="finance-create-form_input js-comment" placeholder="Введите комментарий">
+			</label>
+
+			<label class="finance-create-form_label">
+				<input type="date" required class="finance-create-form_input js-date">
+			</label>
+
+			<fieldset class="finance-create-form_fieldset js-type-fieldset">
+			</fieldset>
+
+			<input type="submit" value="Сохранить" class="finance-create-form_submit">
+			<button type="button" class="finance-create-form_btn js-btn-close">Закрыть</button>
+		</form>
+	</div>
+
+	<div class="finance-block">
+		<div class="finance-block_header">
+			Бюджет <!-- Название -->
+		</div>
+
+		<div class="finance-block_budget js-budget-form">
+			<div class="finance-block_budget_error js-error-budget invisible">
+				Ошибка, у вас нет доступа на редактирование!
+			</div>
+
+			<label class="finance-block_budget-label">
+				Установите свой бюджет
+				<input type="range" id="range-opacity" class="js-budget" min="5000" max="30000" step="500">
+				<label for="range-opacity" class="js-budget-label"></label>
+			</label>
+
+			<button type="button" class="finance-block_budget-submit js-budget-create">Сохранить</button>
+		</div>
+
+
+
+		<div class="finance-block_create">
+			<button class="finance-block_create-btn js-create-finance">Создать</button>
+		</div>
+
+		<div class="finance-block_sections">
+			<section class="finance-block_section finance-block-consumption">
+				<div class="finance-block-consumption_header">
+					Расходы
+					<select class="js-consumption-select">
+
+					</select>
+				</div>
+				<div class="finance-block-consumption_cnt js-card-list-consumption">
+					
+				</div>
+			</section>
+			<section class="finance-block_section finance-block-income">
+				<div class="finance-block-income_header">
+					Доходы
+					<select class="js-income-select">
+
+					</select>
+				</div>
+				<div class="finance-block-income_cnt js-card-list-income">
+					
+				</div>
+			</section>
+			<section class="finance-block_section finance-block-analysis">
+				<div class="finance-block-analysis_header">
+					Анализ
+					<select class="js-analysis-select">
+
+					</select>
+				</div>
+				<div class="finance-block-analysis_cnt">
+					<div id="js-pie-analysis" width="80%" height="50%">
+
+					</div>
+
+					<div id="js-bar-analysis">
+						
+					</div>
+				</div>
+			</section>	
+		</div>
+
+	</div>
+</body>
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/finance.js"></script>
+<script src="../js/charts.js"></script>
+<script src="../js/cards.js"></script>
+</html>

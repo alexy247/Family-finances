@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+  		<title>
+			Регистрация
+		</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+<body>
+	<div class="registration-block">
+		<div class="registration-block_header">
+			Добро пожаловать
+		</div>
+
+		<form class="registration-block-form" onsubmit="return false;">
+			<div class="registration-block-form_error invisible js-error">
+				Ошибка. Проверьте правильность введенных данных.
+			</div>
+
+            <label class="registration-block-form_label">
+				Имя пользователя
+                <input type="text" class="registration-block-form_input js-name">
+            </label>
+			
+            <label class="registration-block-form_label">
+				Пароль
+			    <input type="password" class="registration-block-form_input js-password">
+            </label>
+
+			<label class="registration-block-form_label">
+				Дата рождения
+			    <input type="date" class="registration-block-form_date js-date">
+            </label>
+			<a href="/login" class="registration-block-form_link">Войти</a>
+			<input type="submit" value="Зарегистрироваться" class="registration-block-form_submit">
+		</form>
+	</div>
+</body>
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/registration.js"></script>
+</html>

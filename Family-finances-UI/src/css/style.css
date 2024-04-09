@@ -1,0 +1,140 @@
+.invisible {
+    display: none;
+    }
+
+.banan {
+    color: #F2DDA4;
+    }
+
+.violet {
+    color: #413C58;
+    }
+
+.greenTea {
+    color: #BFD7B5;
+    }
+
+.room-block_header {
+    font-size: 24px;
+    margin: 14px;
+    }
+
+    .room-block_create {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        }
+
+.finance-block_sections {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .finance-block_section {
+        border: 1px solid gray;
+        border-radius: 4px;
+        padding: 16px;
+        width: 30%;
+        box-shadow: 0px ​0px 9px 0px rgb(117 117 117);
+        }
+
+    .finance-block-layer,
+    .room-block-layer,
+    .room-block-password-layer {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        z-index: 100;
+        background-color: white;
+        width: 600px;
+        margin-left: -250px;
+        padding: 16px;
+        border-radius: 4px;
+        box-shadow: 1px 0px 15px 1px rgb(117 117 117);
+        }
+
+.finance-block-consumption_header,
+.finance-block-income_header,
+.finance-block-analysis_header,
+.finance-block_header,
+.login-block_header,
+.registration-block_header {
+    margin: 8px auto 8px 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .finance-block-consumption-header {
+        margin: 8px auto 8px 0;
+        font-style: italic;
+        }
+
+    .finance-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid gray;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        background-color: rgba(163, 196, 188, 0.12);
+        }
+
+        .finance-item_img {
+            width: 30px;
+            height: 100%;
+            }
+
+        .finance-item_text {
+            flex-grow: 2;
+            margin-left: 12px;
+            }
+
+
+    .room-card {
+        width: 400px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+        margin: 12px;
+        box-shadow: 1px 1px 4px 1px #a3c4bc;
+        }    
+
+        .room-card_delete {
+            width: 16px;
+            height: 16px;
+            }
+
+    .login-block_header,
+    .registration-block_header {
+        justify-content: center;
+        }
+
+    .login-block-form,
+    .registration-block-form {
+        margin: 16px auto;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid;
+        }
+
+    .login-block-form_input,
+    .registration-block-form_label {
+        width: 154px;
+        }
+
+    .login-block-form_label,
+    .registration-block-input {
+        display: flex;
+        justify-content: space-between;
+        margin: 8px 0;
+        }
+    
+    .registration-block-form_link {
+        margin-bottom: 8px;
+        }
